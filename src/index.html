@@ -27,21 +27,24 @@
         <h1 class="font-bold tracking-[.25em] text-lg"> HOT SELLING </h1>
 
     </div>
-    <div class="slider-container flex justify-center">
-        <div class="slider flex flex-row">
-            <div class="item bg-gray-200 border border-gray-300 p-4  ">
-                <img class="h-96 w-auto" src="./img/porsche_poster.jpg" alt="">
+    <div class="slider-container flex justify-center pt-4">
+        <button class="text-3xl font-bold pl-1 md:pl-10" id="prev">
+            &lt;Prev </button>
+        <div class="slider relative w-full h-96 md:h-370 overflow-hidden flex flex-row">
+            <div class="item bg-gray-200 border border-gray-300 p-4 h-96 w-full md:w-auto ">
+                <img class="h-full w-auto" src="./img/porsche_poster.jpg" alt="Product 1">
             </div>
-            <div class="item bg-gray-200 border border-gray-300 p-4">Product 2</div>
-            <div class="item bg-gray-200 border border-gray-300 p-4">Product 3</div>
-            <div class="item bg-gray-200 border border-gray-300 p-4">Product 4</div>
-            <div class="item bg-gray-200 border border-gray-300 p-4">Product 2</div>
-            <div class="item bg-gray-200 border border-gray-300 p-4">Product 3</div>
-            <div class="item bg-gray-200 border border-gray-300 p-4">Product 4</div>
+            <div class="item bg-gray-200 border border-gray-300 p-4 h-96 w-full md:w-auto">Product 2</div>
+            <div class="item bg-gray-200 border border-gray-300 p-4 h-96 w-full md:w-auto">Product 3</div>
+            <div class="item bg-gray-200 border border-gray-300 p-4 h-96 w-full md:w-auto">Product 4</div>
+            <div class="item bg-gray-200 border border-gray-300 p-4 h-96 w-full md:w-auto">Product 2</div>
+            <div class="item bg-gray-200 border border-gray-300 p-4 h-96 w-full md:w-auto">Product 3</div>
+            <div class="item bg-gray-200 border border-gray-300 p-4 h-96 w-full md:w-auto">Product 4</div>
         </div>
-        <button id="prev">Previous</button>
-        <button id="next">Next</button>
+        <button class="text-3xl font-bold pr-1 md:pr-10" id="next">
+            Next&gt; </button>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
