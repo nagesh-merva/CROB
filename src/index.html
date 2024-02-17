@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./main.css">
     <link rel="icon" href="">
 </head>
 
@@ -26,14 +27,23 @@
         <h1 class="font-bold tracking-[.25em] text-lg"> HOT SELLING </h1>
 
     </div>
-    <div class="slider-container ">
-        <div class="slider-track flex flex-row">
-            <div class="slider-item h-16 w-16">Product 1</div>
-            <div class="slider-item h-16 w-16">Product 2</div>
-            <div class="slider-item h-16 w-16">Product 3</div>
-            <div class="slider-item h-16 w-16">Product 4</div>
-            <!-- Add more product items as needed -->
+    <div class="slider-container flex justify-center">
+        <div class="slider flex flex-row">
+            <div class="item bg-gray-200 border border-gray-300 p-4  ">
+                <img class="h-96 w-auto" src="./img/porsche_poster.jpg" alt="">
+            </div>
+            <div class="item bg-gray-200 border border-gray-300 p-4">Product 2</div>
+            <div class="item bg-gray-200 border border-gray-300 p-4">Product 3</div>
+            <div class="item bg-gray-200 border border-gray-300 p-4">Product 4</div>
+            <div class="item bg-gray-200 border border-gray-300 p-4">Product 2</div>
+            <div class="item bg-gray-200 border border-gray-300 p-4">Product 3</div>
+            <div class="item bg-gray-200 border border-gray-300 p-4">Product 4</div>
         </div>
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
