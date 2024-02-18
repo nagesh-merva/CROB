@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="icon" href="">
+</head>
+
+<body class="bg-black text-white">
+    <!-- Image and text -->
+    <section>
+        <nav class="bg-slate-900">
+            <a class="pt-2 pb-2 flex justify-center font-bold text-3xl  " href="#">
+                <img src="" class="" alt="">
+                CROB
+            </a>
+        </nav>
+        <div class="pt-4 h-12 flex justify-center space-x-5 font-thin text-base text-gray-200 ">
+            <a class="hover:text-lg" href="#">About</a>
+            <a class="hover:text-lg" href="#">Caregories</a>
+            <a class="hover:text-lg" href="#">Contact us </a>
+        </div>
+    </section>
+    <section>
+        <div class="pt-6 flex justify-center ">
+            <h1 class="font-bold tracking-[.25em] text-lg"> HOT SELLING </h1>
+
+        </div>
+        <div class="h-64 w-auto md:h-auto flex justify-center mt-10 pt-4">
+            <button class="hidden items-center text-3xl font-bold pl-1 md:pl-10 md:block" id="prev">
+                &lt;Prev </button>
+            <button class="block text-3xl font-bold pl-1 md:pl-10 md:hidden" id="prev1">
+                &lt; </button>
+            <div class="slider relative overflow-hidden w-full h-96 md:h-[400px] flex flex-row">
+                <div
+                    class="item absolute bg-gray-200 rounded-md border border-gray-300 p-1 h-72 w-48 md:h-96 md:w-auto transition-all duration-500 ">
+                    <img class="h-full w-auto rounded-md" src="./src/img/porsche_poster.jpg" alt="Product 1">
+                </div>
+                <div
+                    class="item absolute bg-gray-200 rounded-md border border-gray-300 p-1 h-72 w-48 md:h-96 md:w-auto  transition-all duration-500 ">
+                    <img class="h-full w-auto rounded-md" src="./src/img/ironman_poster.jpeg" alt="Product 1">
+                </div>
+                <div
+                    class="item absolute bg-gray-200 rounded-md border border-gray-300 p-1 h-72 w-48 md:h-96 md:w-auto transition-all duration-500 ">
+                    <img class="h-full w-auto rounded-md" src="./src/img/Ironman-2.jpeg" alt="Product 1">
+                </div>
+                <div
+                    class="item absolute bg-gray-200 rounded-md border border-gray-300 p-1 h-72 w-48 md:h-96 md:w-auto transition-all duration-500 ">
+                    <img class="h-full w-auto rounded-md" src="./src/img/ironman3-poster.jpeg" alt="Product 1">
+                </div>
+                <div
+                    class="item absolute bg-gray-200 rounded-md border border-gray-300 p-1 h-72 w-48 md:h-96 md:w-auto transition-all duration-500 ">
+                    <img class="h-full w-auto rounded-md" src="./src/img/porsche_poster.jpg" alt="Product 1">
+                </div>
+                <div
+                    class="item absolute bg-gray-200 rounded-md border border-gray-300 p-1 h-72 w-48 md:h-96 md:w-auto transition-all duration-500 ">
+                    <img class="h-full w-auto rounded-md" src="./src/img/porsche_poster.jpg" alt="Product 1">
+                </div>
+                <div
+                    class="item absolute bg-gray-200 rounded-md border border-gray-300 p-1 h-72 w-48 md:h-96 md:w-auto transition-all duration-500  ">
+                    <img class="h-full w-auto rounded-md" src="./src/img/porsche_poster.jpg" alt="Product 1">
+                </div>
+            </div>
+            <button class=" hidden text-3xl font-bold pr-1 md:pr-10 md:block" id="next">
+                Next&gt; </button>
+            <button class="block text-3xl font-bold pr-1 md:pr-10 md:hidden" id="next1">
+                &gt; </button>
+        </div>
+    </section>
+    <section class="md:pt-24 ">
+        <div class="pt-32 grid grid-cols-1 gap-2 h-72 w-full md:grid-cols-4 md:h-96 md:pt-14">
+            <div class="m-5 flex flex-col justify-center md:m-10 md:pt-10 md:pl-10 ">
+                <h1 class="text-6xl font-bold p-1">Popular</h1>
+                <h1 class="text-6xl font-bold p-1">Products</h1>
+                <h4 class="p-1 pl-5">Discount upto 25% </h4>
+                <button
+                    class=" mt-4 w-36 rounded-full transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ">
+                    <h1 class="font-mono p-2">Explore more</h1>
+                </button>
+            </div>
+            <div class="h-72 w-auto flex justify-center">
+                <img class="h-72 w-auto" src="./src/img/ironman3-poster.jpeg" alt="">
+            </div>
+            <div class="h-72 w-auto flex justify-center">
+                <img class="h-72 w-auto" src="./src/img/ironman_poster.jpeg" alt="">
+            </div>
+            <div class="h-72 w-auto flex justify-center">
+                <img class="h-72 w-auto" src="./src/img/Ironman-2.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
