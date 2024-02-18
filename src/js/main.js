@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let items = document.querySelectorAll('.slider .item');
     let next = document.getElementById('next');
     let prev = document.getElementById('prev');
+    let next1 = document.getElementById('next1');
+    let prev1 = document.getElementById('prev1');
 
     let active = 0;
     let intervalId;
@@ -50,6 +52,17 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     prev.onclick = function () {
+        active = active - 1 >= 0 ? active - 1 : items.length - 1;
+        loadShow();
+        stopSlider();
+    };
+    next1.onclick = function () {
+        active = active + 1 < items.length ? active + 1 : 0;
+        loadShow();
+        stopSlider();
+    };
+
+    prev1.onclick = function () {
         active = active - 1 >= 0 ? active - 1 : items.length - 1;
         loadShow();
         stopSlider();
