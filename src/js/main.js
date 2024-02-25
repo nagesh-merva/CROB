@@ -68,5 +68,33 @@ document.addEventListener('DOMContentLoaded', function () {
         stopSlider();
     };
 
+
 });
 
+
+function showContent(element) {
+    const headings = element.querySelectorAll('h3, h6, h2');
+    headings.forEach(heading => heading.style.display = 'block');
+}
+
+function hideContent(element) {
+    const headings = element.querySelectorAll('h3, h6, h2');
+    headings.forEach(heading => heading.style.display = 'none');
+}
+
+
+// let sections = document.querySelectorAll('section');
+
+// window.onscroll = () => {
+//     sections.forEach(sec => {
+//         let top = window.scrollY
+//         let offset = sec.offsetTop - 150
+//         let height = sec.offsetHeight
+//         if (top >= offset && top < offset + height) {
+//             sec.classList.add('show-animate');
+//         }
+//         else {
+//             sec.classList.remove('show-animate');
+//         }
+//     })
+// }

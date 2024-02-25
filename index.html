@@ -27,10 +27,9 @@
             <a class="hover:text-lg" href="#">Contact us </a>
         </div>
     </section>
-    <section>
+    <section id="sec-1">
         <div class="pt-6 flex justify-center ">
             <h1 class="font-bold tracking-[.25em] text-lg"> HOT SELLING </h1>
-
         </div>
         <div class="h-64 w-auto md:h-auto flex justify-center mt-10 pt-4">
             <button class="hidden items-center text-3xl font-bold pl-1 md:pl-10 md:block" id="prev">
@@ -73,7 +72,7 @@
                 &gt; </button>
         </div>
     </section>
-    <section class="md:pt-24 mb-8">
+    <section id="sec-2" class="md:pt-24 mb-8">
         <div class="pt-32 grid grid-cols-1 gap-2  md:grid-cols-4 md:h-96 md:pt-14">
             <div class="m-5 pl-2 flex flex-col justify-center md:m-10 md:pt-10 md:pl-10 ">
                 <h1 class="text-6xl font-bold p-1">Popular</h1>
@@ -84,18 +83,21 @@
                     <h1 class="font-mono p-2">Explore more</h1>
                 </button>
             </div>
-            <div class="h-72 w-auto flex justify-center">
-                <img class="h-72 w-auto" src="./src/img/ironman3-poster.jpeg" alt="">
+            <div
+                class="h-72 w-auto rounded-lg flex justify-center transform transition-transform duration-500 ease-in-out hover:scale-125 hover:bg-blue-500">
+                <img class="h-72 w-auto p-2" src="./src/img/ironman3-poster.jpeg" alt="">
             </div>
-            <div class="h-72 w-auto flex justify-center">
-                <img class="h-72 w-auto" src="./src/img/ronaldo-poster3.jpg" alt="">
+            <div
+                class="h-72 w-auto flex justify-center rounded-lg transform transition-transform duration-500 ease-in-out hover:scale-125 hover:bg-blue-500">
+                <img class="h-72 w-auto p-2" src="./src/img/ronaldo-poster3.jpg" alt="">
             </div>
-            <div class="h-72 w-auto flex justify-center">
-                <img class="h-72 w-auto" src="./src/img/ronaldo-poster.jpg" alt="">
+            <div
+                class="h-72 w-auto flex justify-center rounded-lg transform transition-transform duration-500 ease-in-out hover:scale-125 hover:bg-blue-500">
+                <img class="h-72 w-auto p-2" src="./src/img/ronaldo-poster.jpg" alt="">
             </div>
         </div>
     </section>
-    <section>
+    <section id="sec-3">
         <div
             class="bg-gradient-to-r from-yellow-500 to-red-500 m-5 hover:from-red-500 hover:to-yellow-500 flex rounded-lg md:space-x-96">
             <div class="md:w-80 flex items-center justify-center flex-col flex-wrap">
@@ -107,76 +109,85 @@
                 src="./src/img/Cro.B_logo-removebg-preview.png" alt="">
         </div>
     </section>
-    <section>
+    <section id="sec-4">
         <div class="bg-auto border-b-2 border-t-2 border-slate-400 hover:border-green-800 m-2 "
             style="background-image: url(./src/img/background.jpg);">
             <div class="flex justify-center ">
                 <h3 class="font-bold text-2xl p-1">Our Latest Collection.</h3>
             </div>
-            <div class="grid grid-cols-2 gap-2 md:p-2 md:grid-cols-4 md:gap-10 pl-2 pr-2 ">
-                <div class=" bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4">
-                    <img class="p-5 md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
+            <div class="relative grid grid-cols-2 gap-2 md:p-2 md:grid-cols-4 md:gap-10 pl-2 pr-2 ">
+                <div
+                    class="relative  bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4 transform transition-transform duration-500 ease-in-out  hover:bg-blue-500 ">
+                    <img class=" md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
                         src="./src/img/rashford-poster.jpg" alt="rashford-poster.jpg">
-                    <h3 class="font-roboto text-lg">rashford poster </h3>
-                    <h6 class="font-sans text-thin text-slate-200">Man United</h6>
-                    <h2 class="font-roboto font-bold text-lg md:text-xl pb-5"> price - &#x20b9; 259 </h2>
+                    <h3 class="hidden font-roboto text-lg">rashford poster </h3>
+                    <h6 class="hidden font-sans text-thin text-slate-200">Man United</h6>
+                    <h2 class="hidden font-roboto font-bold text-lg md:text-xl pb-5"> price - &#x20b9; 259 </h2>
                 </div>
-                <div class=" bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4">
-                    <img class="p-5 md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
+                <div
+                    class="relative bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4 transform transition-transform duration-500 ease-in-out hover:bg-blue-500 z-10">
+                    <img class=" md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
                         src="./src/img/porsche_poster.jpg" alt="rashford-poster.jpg">
-                    <h3 class="font-roboto text-lg">porsche poster</h3>
-                    <h6 class="font-sans text-thin text-slate-200">sports Cars</h6>
-                    <h2 class="font-roboto font-bold text-lg md:text-xl pb-5"> price - &#x20b9; 359 </h2>
+                    <h3 class="hidden font-roboto text-lg">porsche poster</h3>
+                    <h6 class="hidden font-sans text-thin text-slate-200">sports Cars</h6>
+                    <h2 class="hidden font-roboto font-bold text-lg md:text-xl pb-5"> price - &#x20b9; 359 </h2>
                 </div>
 
-                <div class=" bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4">
-                    <img class="p-5 md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
+                <div
+                    class="relative bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4 transform transition-transform duration-500 ease-in-out hover:bg-blue-500 z-10">
+                    <img class=" md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
                         src="./src/img/ironman_poster.jpeg" alt="rashford-poster.jpg">
-                    <h3 class="font-roboto text-lg">ironman poster </h3>
-                    <h6 class="font-sans text-thin text-slate-200">Marvel</h6>
-                    <h2 class="font-roboto font-bold text-lg md:text-xl pb-5"> price - &#x20b9; 179 </h2>
+                    <h3 class="hidden font-roboto text-lg">ironman poster </h3>
+                    <h6 class="hidden font-sans text-thin text-slate-200">Marvel</h6>
+                    <h2 class="hidden font-roboto font-bold text-lg md:text-xl pb-5"> price - &#x20b9; 179 </h2>
                 </div>
-                <div class=" bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4">
-                    <img class="p-5 md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
+                <div
+                    class="relative bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4 transform transition-transform duration-500 ease-in-out hover:bg-blue-500 z-10">
+                    <img class=" md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
                         src="./src/img/ronaldo-poster3.jpg" alt="rashford-poster.jpg">
-                    <h3 class="font-roboto text-lg">ronaldo poster</h3>
-                    <h6 class="font-sans text-thin text-slate-200">Ronaldo series</h6>
-                    <h2 class="font-roboto font-bold text-lg md:text-xl pb-5 "> price - &#x20b9; 279 </h2>
+                    <h3 class="hidden font-roboto text-lg">ronaldo poster</h3>
+                    <h6 class="hidden font-sans text-thin text-slate-200">Ronaldo series</h6>
+                    <h2 class="hidden font-roboto font-bold text-lg md:text-xl pb-5 "> price - &#x20b9; 279 </h2>
                 </div>
-                <div class=" bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4">
-                    <img class="p-5 md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
+                <div
+                    class="relative bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4 transform transition-transform duration-500 ease-in-out hover:bg-blue-500 z-10">
+                    <img class=" md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
                         src="./src/img/rashford-poster.jpg" alt="rashford-poster.jpg">
-                    <h3 class="font-roboto text-lg">rashford poster </h3>
-                    <h6 class="font-sans text-thin text-slate-200">Man United</h6>
-                    <h2 class="font-roboto font-bold text-lg md:text-xl pb-5"> price - &#x20b9; 259 </h2>
+                    <h3 class="hidden font-roboto text-lg">rashford poster </h3>
+                    <h6 class="hidden font-sans text-thin text-slate-200">Man United</h6>
+                    <h2 class="hidden font-roboto font-bold text-lg md:text-xl pb-5"> price - &#x20b9; 259 </h2>
                 </div>
-                <div class=" bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4">
-                    <img class="p-5 md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
+                <div
+                    class="relative bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4 transform transition-transform duration-500 ease-in-out hover:bg-blue-500 z-10">
+                    <img class=" md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
                         src="./src/img/porsche_poster.jpg" alt="rashford-poster.jpg">
-                    <h3 class="font-roboto text-lg">porsche poster</h3>
-                    <h6 class="font-sans text-thin text-slate-200">sports Cars</h6>
-                    <h2 class="font-roboto font-bold text-lg md:text-xl pb-5"> price - &#x20b9; 359 </h2>
+                    <h3 class="hidden font-roboto text-lg">porsche poster</h3>
+                    <h6 class="hidden font-sans text-thin text-slate-200">sports Cars</h6>
+                    <h2 class="hidden font-roboto font-bold text-lg md:text-xl pb-5"> price - &#x20b9; 359 </h2>
                 </div>
-                <div class=" bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4">
-                    <img class="p-5 md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
+                <div
+                    class="relative bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4 transform transition-transform duration-500 ease-in-out hover:bg-blue-500 z-10">
+                    <img class=" md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
                         src="./src/img/ironman_poster.jpeg" alt="rashford-poster.jpg">
-                    <h3 class="font-roboto text-lg">ironman poster </h3>
-                    <h6 class="font-sans text-thin text-slate-200">Marvel</h6>
-                    <h2 class="font-roboto font-bold text-lg md:text-xl pb-5"> price - &#x20b9; 179 </h2>
+                    <h3 class="hidden font-roboto text-lg">ironman poster </h3>
+                    <h6 class="hidden font-sans text-thin text-slate-200">Marvel</h6>
+                    <h2 class="hidden font-roboto font-bold text-lg md:text-xl pb-5"> price - &#x20b9; 179 </h2>
                 </div>
-                <div class=" bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4">
-                    <img class="p-5 md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
+                <div
+                    class="relative bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4 transform transition-transform duration-500 ease-in-out hover:bg-blue-500 z-10">
+                    <img class=" md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
                         src="./src/img/ronaldo-poster3.jpg" alt="rashford-poster.jpg">
-                    <h3 class="font-roboto text-lg">ronaldo poster</h3>
-                    <h6 class="font-sans text-thin text-slate-200">Ronaldo series</h6>
-                    <h2 class="font-roboto font-bold text-lg md:text-xl pb-5 "> price - &#x20b9; 279 </h2>
+                    <h3 class="hidden font-roboto text-lg">ronaldo poster</h3>
+                    <h6 class="hidden font-sans text-thin text-slate-200">Ronaldo series</h6>
+                    <h2 class="hidden font-roboto font-bold text-lg md:text-xl pb-5 "> price - &#x20b9; 279 </h2>
                 </div>
-                <div class=" bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4">
-                    <img class="p-5 md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
+                <div
+                    class="relative bg-zinc-800/80 rounded-lg flex justify-center items-center flex-col p-4 transform transition-transform duration-500 ease-in-out hover:bg-blue-500 z-10">
+                    <img class=" md:p-2 md:h-48 md:w-32 h-32 w-24 border-2 border-white rounded-sm"
                         src="./src/img/rashford-poster.jpg" alt="rashford-poster.jpg">
-                    <h3 class="font-roboto text-lg">rashford poster </h3>
-                    <h6 class="font-sans text-thin text-slate-200">Man United</h6>
-                    <h2 class="font-roboto font-bold text-lg md:text-xl pb-5"> price - &#x20b9; 259 </h2>
+                    <h3 class="hidden font-roboto text-lg">rashford poster </h3>
+                    <h6 class="hidden font-sans text-thin text-slate-200">Man United</h6>
+                    <h2 class="hidden font-roboto font-bold text-lg md:text-xl pb-5"> price - &#x20b9; 259 </h2>
                 </div>
             </div>
         </div>
