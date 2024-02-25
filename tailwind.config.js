@@ -4,7 +4,11 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        pacifico: ['Pacifico', 'cursive'],
+      },
+    },
   },
   plugins: [
     plugin(({ addComponents }) => {
