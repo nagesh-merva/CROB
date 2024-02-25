@@ -5,6 +5,10 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
+      colors: {
+        customBlue: '#005AA7',
+        customTan: '#FFFDE4',
+      },
       fontFamily: {
         pacifico: ['Pacifico', 'cursive'],
       },
