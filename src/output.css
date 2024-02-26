@@ -2000,6 +2000,12 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.from-customBlue {
+  --tw-gradient-from: #005AA7 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 90 167 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-teal-500 {
   --tw-gradient-from: #14b8a6 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(20 184 166 / 0) var(--tw-gradient-to-position);
@@ -2012,10 +2018,8 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-customBlue {
-  --tw-gradient-from: #005AA7 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(0 90 167 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+.to-customTan {
+  --tw-gradient-to: #FFFDE4 var(--tw-gradient-to-position);
 }
 
 .to-indigo-800 {
@@ -2024,10 +2028,6 @@ video {
 
 .to-red-500 {
   --tw-gradient-to: #ef4444 var(--tw-gradient-to-position);
-}
-
-.to-customTan {
-  --tw-gradient-to: #FFFDE4 var(--tw-gradient-to-position);
 }
 
 .decoration-slice {
@@ -2859,15 +2859,15 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:rotate-180:hover {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:border-green-800:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(22 101 52 / var(--tw-border-opacity));
 }
 
 .hover\:border-customBlue:hover {
@@ -2885,24 +2885,24 @@ video {
   background-color: rgb(99 102 241 / var(--tw-bg-opacity));
 }
 
-.hover\:from-red-500:hover {
-  --tw-gradient-from: #ef4444 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(239 68 68 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .hover\:from-customTan:hover {
   --tw-gradient-from: #FFFDE4 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 253 228 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.hover\:to-yellow-500:hover {
-  --tw-gradient-to: #eab308 var(--tw-gradient-to-position);
+.hover\:from-red-500:hover {
+  --tw-gradient-from: #ef4444 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(239 68 68 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .hover\:to-customBlue:hover {
   --tw-gradient-to: #005AA7 var(--tw-gradient-to-position);
+}
+
+.hover\:to-yellow-500:hover {
+  --tw-gradient-to: #eab308 var(--tw-gradient-to-position);
 }
 
 .hover\:text-lg:hover {
@@ -2912,6 +2912,12 @@ video {
 
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:backdrop-hue-rotate-180:hover {
+  --tw-backdrop-hue-rotate: hue-rotate(180deg);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .before\:hover\:text-center:hover::before {
@@ -3015,12 +3021,12 @@ video {
     margin-left: calc(24rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:p-2 {
-    padding: 0.5rem;
-  }
-
   .md\:p-10 {
     padding: 2.5rem;
+  }
+
+  .md\:p-2 {
+    padding: 0.5rem;
   }
 
   .md\:pl-10 {
@@ -3033,6 +3039,10 @@ video {
 
   .md\:pl-40 {
     padding-left: 10rem;
+  }
+
+  .md\:pl-5 {
+    padding-left: 1.25rem;
   }
 
   .md\:pr-10 {
@@ -3053,10 +3063,6 @@ video {
 
   .md\:pt-24 {
     padding-top: 6rem;
-  }
-
-  .md\:pl-5 {
-    padding-left: 1.25rem;
   }
 
   .md\:text-5xl {
