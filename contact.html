@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cro.B Contact</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="icon" href="./src/img/Cro.B_logo-removebg-preview.png" sizes="32x32" type="image/png">
+</head>
+
+<body class="bg-black">
+    <section>
+        <nav class="bg-slate-900">
+            <a class="pt-2 pb-2 flex justify-center font-bold text-3xl text-white " href="#">
+                <img src="" class="" alt="">
+                CROB
+            </a>
+        </nav>
+        <div class="pt-4 h-12 flex justify-center space-x-5 font-thin text-base text-gray-200 ">
+            <a class="hover:text-lg" href="./index.html">Home</a>
+            <a class="hover:text-lg" href="./Category.html">Categories</a>
+            <a class="hover:text-lg" href="./contact.html">Contact us </a>
+        </div>
+    </section>
+    <section>
+        <div class="p-4 md:p-20 ">
+            <div class="flex flex-col space-y-4">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-2xl font-serif font-bold text-white underline decoration-slate-600 pb-8">
+                        Fill out
+                        this
+                        form for any quiries</h1>
+                    <h3 class="font-serif text-white">Our Reach Out To Us on</h3>
+                    <p class="text-white">
+                        Phone: +91 7264833272<br>
+                        Email: crob0008@gmail.com
+                    </p>
+                </div>
+                <form class="flex flex-col space-y-2">
+                    <label for="name" class="text-sm font-medium text-gray-100">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Name"
+                        class="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                        required>
+                    <label for="name" class="text-sm font-medium text-gray-100">Email:</label>
+                    <input type="text" id="name" name="name" placeholder="xyz@gmail.com"
+                        class="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500">
+                    <label for="phone" class="text-sm font-medium text-gray-100">Contact:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number"
+                        class="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                        inputmode="numeric" required>
+                    <label for="query" class="text-sm font-medium text-gray-100">QUERY:</label>
+                    <textarea id="query" name="address" rows="4"
+                        class="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                        placeholder="Delivery address"></textarea>
+                    <button type="submit"
+                        class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700">Submit</button>
+                </form>
+            </div>
+    </section>
+    <script type="module" src="./src/js/contact.js"></script>
+</body>
+
+</html>
