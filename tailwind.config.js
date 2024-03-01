@@ -4,7 +4,15 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customBlue: '#005AA7',
+        customTan: '#FFFDE4',
+      },
+      fontFamily: {
+        pacifico: ['Pacifico', 'cursive'],
+      },
+    },
   },
   plugins: [
     plugin(({ addComponents }) => {
