@@ -1990,8 +1990,9 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.bg-gray-700\/80 {
-  background-color: rgb(55 65 81 / 0.8);
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
 .bg-slate-900 {
@@ -2001,10 +2002,6 @@ video {
 
 .bg-zinc-800\/80 {
   background-color: rgb(39 39 42 / 0.8);
-}
-
-.bg-gray-700\/60 {
-  background-color: rgb(55 65 81 / 0.6);
 }
 
 .bg-gray-700\/50 {
