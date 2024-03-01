@@ -2160,17 +2160,12 @@ video {
   padding: 0.5rem;
 }
 
-<<<<<<< HEAD
-.p-5 {
-  padding: 1.25rem;
-=======
 .p-4 {
   padding: 1rem;
 }
 
 .p-8 {
   padding: 2rem;
->>>>>>> 34ca57719b3850d01c05bf0c1f6a86be9585cc5a
 }
 
 .px-3 {
@@ -2825,10 +2820,6 @@ video {
 
 .delay-150 {
   transition-delay: 150ms;
-}
-
-.duration-1000 {
-  transition-duration: 1000ms;
 }
 
 .duration-300 {
