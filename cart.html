@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cro.B Categories</title>
+    <title>Cro.B product</title>
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <link rel="stylesheet" href="./src/output.css">
     <link rel="icon" href="./src/img/Cro.B_logo-removebg-preview.png" sizes="32x32" type="image/png">
 </head>
@@ -13,9 +14,9 @@
     <section>
         <nav class="bg-slate-900">
             <a class="pt-2 pb-2 flex justify-center font-bold text-3xl  " href="#">
+                <img src="" class="" alt="">
                 CROB
             </a>
-
         </nav>
         <div class="pt-4 h-12 flex justify-center space-x-5 font-thin text-base text-gray-200 ">
             <a class="hover:text-lg" href="./index.html">Home</a>
@@ -24,11 +25,24 @@
             <a class="absolute right-2 md:right-14 bg-gray-500 rounded-lg" href="./cart.html"><img class="h-8 w-auto "
                     src="./src/img/cart.symbol.png" alt="cart"></a>
         </div>
-
     </section>
     <section>
-        <div class="p-4 md:p-20 ">
-            <div id="product-cards" class="relative grid grid-cols-2 gap-2 md:p-2 md:grid-cols-4 md:gap-10 pl-2 pr-2 ">
+        <div id="maindiv" class="p-4 md:p-20 ">
+            <div class="flex p-5 mb-5 md:pl-0 justify-center border-b-2 border-gray-500">
+                <h1 class="font-pacifico text-xl font-bold pb-2">Your Orders</h1>
+            </div>
+            <div class=" grid grid-cols-2 gap-4 md:gap-16 bg-gray-700/50 p-4 rounded-lg">
+                <div class=" flex justify-center p-4">
+                    <img id="P-img" class="border-2 border-whites rounded-sm h-32 md:h-96"
+                        src="./src/img/NEWDROP/Jude Bellingham Madrid.jpg" alt="">
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 ">
+                    <div class="flex flex-col space-y-4">
+                        <h3 id="O-name" class="text-xl font-bold text-gray-400"></h3>
+                        <p id="O-collc" class="text-gray-300">Collection > </p>
+                        <p id="O-price" class="text-gray-100 font-bold">Price > &#x20b9;</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -89,7 +103,7 @@
             </div>
         </div>
     </footer>
-    <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/cart.js"></script>
 </body>
 
 </html>

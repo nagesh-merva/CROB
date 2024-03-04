@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cro.B product</title>
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <link rel="stylesheet" href="./src/output.css">
     <link rel="icon" href="./src/img/Cro.B_logo-removebg-preview.png" sizes="32x32" type="image/png">
 </head>
 
-<body class="bg-black text-white">
+<body class="bg-black text-white ">
     <section>
         <nav class="bg-slate-900">
             <a class="pt-2 pb-2 flex justify-center font-bold text-3xl  " href="#">
@@ -21,6 +22,8 @@
             <a class="hover:text-lg" href="./index.html">Home</a>
             <a class="hover:text-lg" href="./Category.html">Categories</a>
             <a class="hover:text-lg" href="./contact.html">Contact us </a>
+            <a class="absolute right-2 md:right-14 bg-gray-500 rounded-lg" href="./cart.html"><img class="h-8 w-auto "
+                    src="./src/img/cart.symbol.png" alt="cart"></a>
         </div>
     </section>
     <section>
@@ -43,13 +46,13 @@
                         <p id="P-price" class="text-gray-100 font-bold">Price > &#x20b9;19.99</p>
                     </div>
 
-                    <form class="flex flex-col space-y-2">
+                    <form class="flex flex-col space-y-2 text-black">
                         <label for="name" class="text-sm font-medium text-gray-100">Name:</label>
                         <input type="text" id="name" name="name" placeholder="Name"
                             class="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
                             required>
-                        <label for="name" class="text-sm font-medium text-gray-100">Email:</label>
-                        <input type="text" id="name" name="name" placeholder="xyz@gmail.com"
+                        <label for="email" class="text-sm font-medium text-gray-100">Email:</label>
+                        <input type="text" id="email" name="name" placeholder="xyz@gmail.com"
                             class="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500">
                         <label for="phone" class="text-sm font-medium text-gray-100">Contact:</label>
                         <input type="tel" id="phone" name="phone" placeholder="Phone Number"
@@ -57,9 +60,9 @@
                             inputmode="numeric" required>
                         <label for="address" class="text-sm font-medium text-gray-100">Address:</label>
                         <textarea id="address" name="address" rows="4"
-                            class="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                            class="px-3 py-2 rounded-md border text-black border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
                             placeholder="Delivery address"></textarea>
-                        <button type="submit"
+                        <button type="submit" id="placeorder"
                             class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700">Place
                             Order</button>
                     </form>
