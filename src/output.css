@@ -873,6 +873,10 @@ video {
   height: 8rem;
 }
 
+.h-48 {
+  height: 12rem;
+}
+
 .h-64 {
   height: 16rem;
 }
@@ -903,6 +907,10 @@ video {
 
 .w-48 {
   width: 12rem;
+}
+
+.w-80 {
+  width: 20rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -2233,6 +2241,10 @@ video {
   padding-left: 0.5rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -2259,6 +2271,10 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .text-left {
@@ -3188,6 +3204,10 @@ video {
 
   .md\:pt-24 {
     padding-top: 6rem;
+  }
+
+  .md\:pr-5 {
+    padding-right: 1.25rem;
   }
 
   .md\:text-5xl {
