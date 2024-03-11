@@ -12,6 +12,8 @@ let displaycartItems = JSON.parse(localStorage.getItem('mycart')) || []
 let neworder
 let retainedid = localStorage.getItem('Rid')
 
+const allLetters = [...'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ']
+
 document.addEventListener("DOMContentLoaded", function () {
     let collectionName = localStorage.getItem('Fromcollection')
 
@@ -46,7 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 async function saveFormData() {
     const phonenumber = document.getElementById('phone').value
-    const idnumber = clickedProduct + phonenumber
+    const randomIndex = Math.floor(Math.random() * allLetters.length)
+    const addLetter = allLetters[randomIndex]
+    const idnumber = clickedProduct + phonenumber + addLetter
     localStorage.setItem('Rid', idnumber)
     const formData = {
         id: idnumber,
