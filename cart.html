@@ -24,9 +24,6 @@
             <a class="hover:text-lg" href="./contact.html">Contact us </a>
             <a class="absolute right-2 md:right-14 bg-gray-500 rounded-lg" href="./cart.html"><img class="h-8 w-auto "
                     src="./src/img/cart.symbol.png" alt="cart"></a>
-            <button onclick="emptyCart()" class="bg-red-300 rounded-lg  hover:scale-110">
-                <h3 class="p-2 pt-1 font-bold">EMPTY cart</h3>
-            </button>
         </div>
     </section>
     <section>
@@ -34,6 +31,12 @@
             <div class="flex p-5 mb-5 md:pl-0 justify-center border-b-2 border-gray-500">
                 <h1 class="font-pacifico text-xl font-bold pb-2">Your Orders</h1>
             </div>
+        </div>
+        <div class="flex justify-center">
+            <button onclick="emptyCart()"
+                class="bg-red-500 text-white py-2 px-4 rounded-full shadow-lg hover:bg-red-600 transform transition-transform duration-300 hover:scale-105 focus:outline-none">
+                <h3 class="font-bold text-lg">Empty Cart</h3>
+            </button>
         </div>
     </section>
     <section>
