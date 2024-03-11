@@ -24,25 +24,15 @@
             <a class="hover:text-lg" href="./contact.html">Contact us </a>
             <a class="absolute right-2 md:right-14 bg-gray-500 rounded-lg" href="./cart.html"><img class="h-8 w-auto "
                     src="./src/img/cart.symbol.png" alt="cart"></a>
+            <button onclick="emptyCart()" class="bg-red-300 rounded-lg  hover:scale-110">
+                <h3 class="p-2 pt-1 font-bold">EMPTY cart</h3>
+            </button>
         </div>
     </section>
     <section>
         <div id="maindiv" class="p-4 md:p-20 ">
             <div class="flex p-5 mb-5 md:pl-0 justify-center border-b-2 border-gray-500">
                 <h1 class="font-pacifico text-xl font-bold pb-2">Your Orders</h1>
-            </div>
-            <div class=" grid grid-cols-2 gap-4 md:gap-16 bg-gray-700/50 p-4 rounded-lg">
-                <div class=" flex justify-center p-4">
-                    <img id="P-img" class="border-2 border-whites rounded-sm h-32 md:h-96"
-                        src="./src/img/NEWDROP/Jude Bellingham Madrid.jpg" alt="">
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 ">
-                    <div class="flex flex-col space-y-4">
-                        <h3 id="O-name" class="text-xl font-bold text-gray-400"></h3>
-                        <p id="O-collc" class="text-gray-300">Collection > </p>
-                        <p id="O-price" class="text-gray-100 font-bold">Price > &#x20b9;</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -103,7 +93,7 @@
             </div>
         </div>
     </footer>
-    <script type="module" src="./src/js/cart.js"></script>
+    <script src="./src/js/cart.js"></script>
 </body>
 
 </html>
