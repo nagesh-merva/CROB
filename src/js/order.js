@@ -37,12 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(displaycartItems)
     console.log(retainedid)
     document.getElementById('placeorder').addEventListener("click", async function () {
+        event.preventDefault()
         saveFormData()
-        checkcart(retainedid)
+        alert.style.display = 'block';
     })
 
 })
-
 
 async function saveFormData() {
     const phonenumber = document.getElementById('phone').value
@@ -72,20 +72,22 @@ async function saveFormData() {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(formData),
-
+            credentials: 'include',
         });
         if (response.ok) {
             console.log(neworder)
             displaycartItems.push(neworder)
             localStorage.setItem('mycart', JSON.stringify(displaycartItems))
             neworder = {}
-            window.location.href = './cart.html'
+            checkcart(idnumber)
             console.log('Form data sent successfully')
         } else {
             console.error('Failed to send form data')
+            alert.style.display = 'block';
         }
     } catch (error) {
         console.error('Error sending form data:', error)
+        alert.style.display = 'block';
     }
 }
 
@@ -94,11 +96,7 @@ function checkcart(ID) {
 
     if (!isIdpresent) {
         alert.style.display = "block"
-        return 0
-    }
-    else {
+    } else {
         window.location.href = './cart.html'
     }
 }
-
-
