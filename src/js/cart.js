@@ -5,7 +5,7 @@ let displaycartItems = JSON.parse(localStorage.getItem('mycart')) || []
 
 async function fetchOrderStatuses(orderIds) {
     try {
-        const response = await fetch('http://localhost:8000/api/get_order_statuses', {
+        const response = await fetch('https://cro-b-backend.vercel.app/api/get_order_statuses', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
