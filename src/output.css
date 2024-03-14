@@ -2020,9 +2020,8 @@ video {
   background-color: rgb(55 65 81 / 0.5);
 }
 
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+.bg-red-500\/80 {
+  background-color: rgb(239 68 68 / 0.8);
 }
 
 .bg-slate-900 {
@@ -2032,10 +2031,6 @@ video {
 
 .bg-zinc-800\/80 {
   background-color: rgb(39 39 42 / 0.8);
-}
-
-.bg-red-500\/80 {
-  background-color: rgb(239 68 68 / 0.8);
 }
 
 .bg-gradient-to-r {
