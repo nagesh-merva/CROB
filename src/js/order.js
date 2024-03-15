@@ -41,9 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('placeorder').addEventListener("click", async function () {
         event.preventDefault()
         saveFormData()
-        alert.style.display = 'block';
     })
-
 })
 
 async function saveFormData() {
