@@ -8,9 +8,13 @@ module.exports = {
       colors: {
         customBlue: '#005AA7',
         customTan: '#FFFDE4',
+        customblack: '#020205',
+        customborder: '#524e3e'
       },
       fontFamily: {
         pacifico: ['Pacifico', 'cursive'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        terminator: ['Terminator', 'sans-serif'],
       },
     },
   },
