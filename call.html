@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cro.B Contact</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="icon" href="./src/img/Cro.B_logo-removebg-preview.png" sizes="32x32" type="image/png">
+</head>
+
+<body class="bg-black">
+    <section>
+        <nav class="bg-slate-900">
+            <a class="pt-2 pb-2 flex justify-center font-bold text-3xl text-white " href="#">
+                <img src="" class="" alt="">
+                CROB
+            </a>
+        </nav>
+        <div class="pt-4 h-12 flex justify-center space-x-5 font-thin text-base text-gray-200 ">
+            <a class="hover:text-lg" href="./index.html">Home</a>
+            <a class="hover:text-lg" href="./Category.html">Categories</a>
+            <a class="hover:text-lg" href="./contact.html">Contact us </a>
+            <a class="hover:text-lg" href="./portfolio.html">Portfolio </a>
+            <a class="absolute top-3 right-3 md:top-auto md:right-14 bg-gray-500 rounded-lg" href="./cart.html"><img
+                    class="h-8 w-auto " src="./src/img/cart.symbol.png" alt="cart"></a>
+        </div>
+    </section>
+    <section>
+        <div class="p-4 md:p-20 ">
+            <div class="flex flex-col space-y-4">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-2xl font-sans font-bold text-center text-white pb-8">
+                        SCHEDULE A CALL WITH US </h1>
+                    <h3 class="font-serif text-white">Or Reach Out To Us on</h3>
+                    <p class="text-white">
+                        Phone: +91 7264833272
+                    </p>
+                    <p class="text-white"> Email: crob0008@gmail.com
+                    </p>
+
+                    <div class="mt-2 w-full md:w-1/2 rounded-lg bg-blue-300/20 ">
+                        <form class="flex flex-col space-y-2 p-5">
+                            <label for="name" class="text-sm font-medium text-gray-100">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Name"
+                                class="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                                required>
+                            <label for="name" class="text-sm font-medium text-gray-100">Email:</label>
+                            <input type="text" id="email" name="email" placeholder="xyz@gmail.com"
+                                class="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500">
+                            <label for="phone" class="text-sm font-medium text-gray-100">Contact:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number"
+                                class="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                                inputmode="numeric" required>
+                            <label for="time" class="text-sm font-medium text-gray-100">Date and time :</label>
+                            <textarea id="time" name="time" rows="4"
+                                class="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                                placeholder="Enter date dd/mm and time 00:00 "></textarea>
+                            <button type="submit"
+                                class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script type="module" src="./src/js/call.js"></script>
+</body>
+
+</html>
