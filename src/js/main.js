@@ -1,7 +1,7 @@
 import { details } from "./products.js";
 
-const productContainer = document.getElementById("product-cards");
-let collection = "PXC"
+const productContainer = document.getElementById("product-cards")
+let collection = "CARS"
 if (!productContainer) {
     console.error("Product container not found")
 } else {
@@ -9,7 +9,7 @@ if (!productContainer) {
 
     document.addEventListener("DOMContentLoaded", function () {
         generateProductCards(collection)
-    });
+    })
 }
 
 

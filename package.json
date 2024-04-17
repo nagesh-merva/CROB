@@ -2,6 +2,9 @@
   "devDependencies": {
     "tailwindcss": "^3.4.1"
   },
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.12"
   }
