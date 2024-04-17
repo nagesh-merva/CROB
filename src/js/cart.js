@@ -62,20 +62,28 @@ async function renderOrders() {
 
         const price = document.createElement('p')
         price.classList.add('text-gray-100', 'font-bold')
-        price.innerHTML = `${order.productPrice}`
+        price.innerHTML = `price > ₹${order.productPrice}`
 
         const status = document.createElement('p')
         status.classList.add('text-gray-100', 'font-bold')
         status.innerHTML = `Status > ${getStatusText(orderStatuses.find(status => status.id === order.id))}`
 
-        const pay = document.createElement('form')
-        pay.innerHTML = '<script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_NmiBlR1MtoxQe5" async> </script>'
+        const payForm = document.createElement('form')
+        const razorpayScript = document.createElement('script')
+        razorpayScript.src = 'https://checkout.razorpay.com/v1/payment-button.js'
+        if (order.productPrice === '179') {
+            razorpayScript.setAttribute('data-payment_button_id', 'pl_NzmWFXbKsvILpL')
+        } else {
+            razorpayScript.setAttribute('data-payment_button_id', 'pl_NzmZpQ9LCEbTE7')
+        }
+        razorpayScript.async = true
 
+        payForm.appendChild(razorpayScript)
         textDiv.appendChild(name)
         textDiv.appendChild(collc)
         textDiv.appendChild(price)
         textDiv.appendChild(status)
-        textDiv.appendChild(pay)
+        textDiv.appendChild(payForm)
         detailsDiv.appendChild(textDiv)
 
         orderDiv.appendChild(imgDiv);
@@ -115,7 +123,7 @@ function calculateTotalPrice() {
 
     const totalTag = document.getElementById('total')
     if (totalTag) {
-        totalTag.textContent = ` ₹${totalPrice.toFixed(2)}`
+        totalTag.textContent += ` ₹${totalPrice.toFixed(2)}`
     } else {
         console.error('Total tag with id "total" not found')
     }

@@ -49,6 +49,7 @@ async function saveFormData() {
     const randomIndex = Math.floor(Math.random() * allLetters.length)
     const addLetter = allLetters[randomIndex]
     const idnumber = clickedProduct + phonenumber + addLetter
+
     localStorage.setItem('Rid', idnumber)
     const formData = {
         id: idnumber,
@@ -64,7 +65,7 @@ async function saveFormData() {
         productImg: Imgtag.src,
         productCollc: Collctag.textContent,
         productName: Nametag.textContent,
-        productPrice: Pricetag.innerHTML,
+        productPrice: extractNumericPrice(Pricetag.textContent),
     }
 
     try {
@@ -100,5 +101,15 @@ function checkcart(ID) {
         alert.style.display = "block"
     } else {
         window.location.href = './cart.html'
+    }
+}
+
+function extractNumericPrice(priceString) {
+    const numericPrice = priceString.match(/[0-9.]+/g);
+
+    if (numericPrice && numericPrice.length > 0) {
+        return numericPrice[0];
+    } else {
+        return ''
     }
 }

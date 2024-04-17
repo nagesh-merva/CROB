@@ -7,7 +7,7 @@ export const details = [
                 img: "./src/img/ronaldo-poster2",
                 collection: "PLAYERS X CLUBS",
                 data: "Juventus",
-                Price: 259,
+                Price: 179,
             },
             {
                 id: "PXC2",
@@ -15,7 +15,7 @@ export const details = [
                 img: "./src/img/NEWDROP/Jude Bellingham Madrid.jpg",
                 collection: "PLAYERS X CLUBS",
                 data: "Real madrid",
-                Price: 309,
+                Price: 179,
             },
             {
                 id: "PXC3",
@@ -31,7 +31,7 @@ export const details = [
                 img: "./src/img/NEWDROP//Julian Alvarez x Manchester city.jpg",
                 collection: "PLAYERS X CLUBS",
                 data: "Manchester City",
-                Price: 279,
+                Price: 249,
             },
             {
                 id: "PXC5",
@@ -55,7 +55,7 @@ export const details = [
                 img: "./src/img/NEWDROP/SON X SPURS.jpg",
                 collection: "PLAYERS X CLUBS",
                 data: "Spurs",
-                Price: 309,
+                Price: 249,
             },
             {
                 id: "PXC8",
@@ -63,7 +63,7 @@ export const details = [
                 img: "./src/img/ronaldo-poster3.jpg",
                 collection: "PLAYERS X CLUBS",
                 data: "JUVENTUS",
-                Price: 279,
+                Price: 249,
             },
         ],
         CARS: [
