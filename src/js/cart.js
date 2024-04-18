@@ -34,7 +34,7 @@ async function renderOrders() {
     const orderStatuses = await fetchOrderStatuses(orderIds)
     displaycartItems.forEach((order, index) => {
         const orderDiv = document.createElement('div')
-        orderDiv.classList.add('grid', 'grid-cols-2', 'gap-4', 'md:gap-16', 'bg-gray-700/50', 'p-4', 'rounded-lg', 'mt-2')
+        orderDiv.classList.add('grid', 'grid-cols-2', 'gap-4', 'md:gap-16', 'bg-gray-700/50', 'p-4', 'rounded-lg', 'mt-2', 'overflow-x-hidden')
 
         const imgDiv = document.createElement('div')
         imgDiv.classList.add('flex', 'justify-center', 'p-4')
