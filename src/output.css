@@ -2572,6 +2572,10 @@ video {
   padding-top: 0.5rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .pt-32 {
   padding-top: 8rem;
 }
@@ -3481,6 +3485,16 @@ video {
 
 .group:hover .group-hover\:h-1\/2 {
   height: 50%;
+}
+
+.group:hover .group-hover\:from-customTan {
+  --tw-gradient-from: #FFFDE4 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 253 228 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.group:hover .group-hover\:to-customBlue {
+  --tw-gradient-to: #005AA7 var(--tw-gradient-to-position);
 }
 
 @media (min-width: 640px) {

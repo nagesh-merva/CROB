@@ -40,6 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(retainedid)
     document.getElementById('placeorder').addEventListener("click", async function () {
         event.preventDefault()
+        const name = document.getElementById('name').value
+        const phone = document.getElementById('phone').value
+        const address = document.getElementById('address').value
+        if (!name || !phone || !address) {
+            alert('Please fill in all required fields')
+            return
+        }
         saveFormData()
     })
 })
