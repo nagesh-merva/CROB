@@ -53,6 +53,7 @@
                         <h3 id="P-name" class="text-xl font-bold text-gray-400">Jude Bellingham</h3>
                         <p id="P-collc" class="text-gray-300">Collection > Players X clubs</p>
                         <p id="P-price" class="text-gray-100 font-bold">Price > &#x20b9;19.99</p>
+                        <p id="alert" class="hidden text-red-500 font-bold">PLEASE FILL ALL THE DETAILS</p>
                     </div>
 
                     <form class="flex flex-col space-y-2 text-black">
@@ -71,6 +72,14 @@
                         <textarea id="address" name="address" rows="4"
                             class="px-3 py-2 rounded-md border text-black border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
                             placeholder="Delivery address" required></textarea>
+                        <label class="text-sm font-medium text-gray-100">Payment Method:</label>
+                        <div class="flex items-center space-x-4 bg-white rounded-lg p-4">
+                            <input type="radio" id="cash_on_delivery" name="payment_method" value="cash">
+                            <label for="cash_on_delivery">Cash on Delivery</label>
+
+                            <input type="radio" id="pay_now" name="payment_method" value="pay_now" checked>
+                            <label for="pay_now">Pay Now</label>
+                        </div>
                         <button type="submit" id="placeorder"
                             class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700">
                             PLACE ORDER

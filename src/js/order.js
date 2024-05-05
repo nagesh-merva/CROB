@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const phone = document.getElementById('phone').value
         const address = document.getElementById('address').value
         if (!name || !phone || !address) {
-            alert('Please fill in all required fields')
+            let alert = document.getElementById("alert")
+            alert.style.display = "block"
             return
         }
         saveFormData()
@@ -65,16 +66,17 @@ async function saveFormData() {
         phone: phonenumber,
         address: document.getElementById('address').value,
         productName: Nametag.textContent,
-        productPrice: Pricetag.innerHTML
-    };
+        productPrice: Pricetag.innerHTML,
+        paymentMethod: document.querySelector('input[name="payment_method"]:checked').value,
+    }
     neworder = {
         id: idnumber,
         productImg: Imgtag.src,
         productCollc: Collctag.textContent,
         productName: Nametag.textContent,
         productPrice: extractNumericPrice(Pricetag.textContent),
+        paymentMethod: document.querySelector('input[name="payment_method"]:checked').value
     }
-
     try {
         const response = await fetch('https://cro-b-backend.vercel.app/api/save_form_data', {
             method: 'POST',

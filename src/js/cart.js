@@ -67,18 +67,20 @@ async function renderOrders() {
         const status = document.createElement('p')
         status.classList.add('text-gray-100', 'font-bold')
         status.innerHTML = `Status > ${getStatusText(orderStatuses.find(status => status.id === order.id))}`
-
         const payForm = document.createElement('form')
-        const razorpayScript = document.createElement('script')
-        razorpayScript.src = 'https://checkout.razorpay.com/v1/payment-button.js'
-        if (order.productPrice === '179') {
-            razorpayScript.setAttribute('data-payment_button_id', 'pl_NzmWFXbKsvILpL')
-        } else {
-            razorpayScript.setAttribute('data-payment_button_id', 'pl_NzmZpQ9LCEbTE7')
-        }
-        razorpayScript.async = true
+        if (order.paymentMethod === "pay_now") {
 
-        payForm.appendChild(razorpayScript)
+            const razorpayScript = document.createElement('script')
+            razorpayScript.src = 'https://checkout.razorpay.com/v1/payment-button.js'
+            if (order.productPrice === '179') {
+                razorpayScript.setAttribute('data-payment_button_id', 'pl_NzmWFXbKsvILpL')
+            } else {
+                razorpayScript.setAttribute('data-payment_button_id', 'pl_NzmZpQ9LCEbTE7')
+            }
+            razorpayScript.async = true
+            payForm.appendChild(razorpayScript)
+        }
+
         textDiv.appendChild(name)
         textDiv.appendChild(collc)
         textDiv.appendChild(price)
