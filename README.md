@@ -47,7 +47,7 @@ Check out the live site: [CROB](https://www.crob.shop)
     ```bash
     pip install -r requirements.txt
 
-3. ** Environment Setup **
+3. **Environment Setup**
      ```bash
      RAZORPAY_KEY_ID=your_key_id
      RAZORPAY_SECRET_KEY=your_secret_key
@@ -76,10 +76,10 @@ Check out the live site: [CROB](https://www.crob.shop)
     ├── requirements.txt  # Backend dependencies
     └── README.md         # Project documentation
 
-** Payment Integration **
+**Payment Integration**
 - The Razorpay API is integrated for a secure and efficient payment experience. Users can pay for their products using various payment methods such as credit/debit cards, net banking, and more.
 
-** Contributing **
+**Contributing**
 1. Fork the repository.
 2. Create a new branch: git checkout -b feature-branch-name
 3. Make your changes and commit them: git commit -m 'Add some feature'
