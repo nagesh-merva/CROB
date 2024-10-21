@@ -1,6 +1,6 @@
 # CROB - E-commerce Platform
 
-![CROB](https://www.crob.shop/assets/logo.png) <!-- Replace with the actual logo URL if available -->
+![CROB](https://www.crob.shop/src/img/topbar_logo.png) <!-- Replace with the actual logo URL if available -->
 
 ## Overview
 
